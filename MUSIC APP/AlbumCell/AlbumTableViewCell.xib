@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="albumCell" rowHeight="138" id="KGk-i7-Jjw" customClass="AlbumTableViewCell" customModule="MUSIC_APP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDN-jn-tCo">
+                        <rect key="frame" x="2" y="2" width="316" height="134"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="suP-1e-DZn">
+                                <rect key="frame" x="10" y="12" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="6G5-HW-OWo"/>
+                                    <constraint firstAttribute="height" constant="110" id="XIh-6r-mgH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="albumTitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDX-Wo-MwP">
+                                <rect key="frame" x="130" y="20" width="84.333333333333314" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Zbp-uI-SPb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artistName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJQ-MT-weL">
+                                <rect key="frame" x="130" y="55" width="65" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="JRI-94-iR7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="0.41365283688172599" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rJQ-MT-weL" firstAttribute="leading" secondItem="suP-1e-DZn" secondAttribute="trailing" constant="10" id="5aU-8V-Wmt"/>
+                            <constraint firstItem="LDX-Wo-MwP" firstAttribute="top" secondItem="fDN-jn-tCo" secondAttribute="top" constant="20" id="I3v-rU-cBa"/>
+                            <constraint firstItem="suP-1e-DZn" firstAttribute="leading" secondItem="fDN-jn-tCo" secondAttribute="leading" constant="10" id="SIY-JF-P58"/>
+                            <constraint firstItem="LDX-Wo-MwP" firstAttribute="leading" secondItem="suP-1e-DZn" secondAttribute="trailing" constant="10" id="UAr-pv-Pzd"/>
+                            <constraint firstItem="suP-1e-DZn" firstAttribute="centerY" secondItem="fDN-jn-tCo" secondAttribute="centerY" id="dG8-0Y-PN7"/>
+                            <constraint firstAttribute="bottom" secondItem="suP-1e-DZn" secondAttribute="bottom" constant="12" id="dJV-Za-59I"/>
+                            <constraint firstItem="rJQ-MT-weL" firstAttribute="top" secondItem="LDX-Wo-MwP" secondAttribute="bottom" constant="10" id="xf7-D5-1Km"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fDN-jn-tCo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="RCH-mc-5nl"/>
+                    <constraint firstAttribute="trailing" secondItem="fDN-jn-tCo" secondAttribute="trailing" constant="2" id="Rip-Ek-Ols"/>
+                    <constraint firstAttribute="bottom" secondItem="fDN-jn-tCo" secondAttribute="bottom" constant="2" id="ccE-Kq-fii"/>
+                    <constraint firstItem="fDN-jn-tCo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="qd0-rU-bYP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="albumCellContainer" destination="fDN-jn-tCo" id="w2t-o4-J6B"/>
+                <outlet property="imageAlbumCell" destination="suP-1e-DZn" id="mhY-1C-5TV"/>
+                <outlet property="lblArtistNameCell" destination="rJQ-MT-weL" id="rVe-Ao-iJi"/>
+                <outlet property="lblTitleAlbumCell" destination="LDX-Wo-MwP" id="Tde-fK-CfP"/>
+            </connections>
+            <point key="canvasLocation" x="130.76923076923077" y="21.327014218009477"/>
+        </tableViewCell>
+    </objects>
+</document>
