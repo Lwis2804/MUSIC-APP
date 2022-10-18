@@ -9,7 +9,9 @@ import UIKit
 
 class SongTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var imageAlbumSong: UIImageView!
+    @IBOutlet weak var imageAlbumSong: UIImageView!{
+        didSet{ self.imageAlbumSong.layer.cornerRadius = 50 }
+    }
     
     @IBOutlet weak var lblSongName: UILabel!
     

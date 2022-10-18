@@ -12,14 +12,14 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="songNameCell" rowHeight="137" id="KGk-i7-Jjw" customClass="SongTableViewCell" customModule="MUSIC_APP" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="137"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="393" height="137"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8F-hc-bUg">
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8F-hc-bUg">
                         <rect key="frame" x="2" y="2" width="389" height="133"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Di-Xb-A7M">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Di-Xb-A7M">
                                 <rect key="frame" x="15" y="11.666666666666671" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="Jd3-Pp-XND"/>
@@ -48,6 +48,9 @@
                             <constraint firstItem="FXV-7a-76W" firstAttribute="top" secondItem="q8F-hc-bUg" secondAttribute="top" constant="20" id="80y-vp-FcO"/>
                             <constraint firstItem="4Di-Xb-A7M" firstAttribute="leading" secondItem="q8F-hc-bUg" secondAttribute="leading" constant="15" id="881-7f-yLa"/>
                             <constraint firstItem="4Di-Xb-A7M" firstAttribute="centerY" secondItem="q8F-hc-bUg" secondAttribute="centerY" id="Fg0-vv-dVC"/>
+                            <constraint firstAttribute="bottom" secondItem="4Di-Xb-A7M" secondAttribute="bottom" constant="11.33" id="O08-Sy-eM5"/>
+                            <constraint firstAttribute="bottom" secondItem="4Di-Xb-A7M" secondAttribute="bottom" constant="11.300000000000001" id="dGF-cG-1ne"/>
+                            <constraint firstAttribute="bottom" secondItem="4Di-Xb-A7M" secondAttribute="bottom" constant="10" id="oSL-51-HNP"/>
                             <constraint firstItem="FXV-7a-76W" firstAttribute="leading" secondItem="4Di-Xb-A7M" secondAttribute="trailing" constant="10" id="roy-0e-DBL"/>
                         </constraints>
                     </view>
